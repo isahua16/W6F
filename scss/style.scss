@@ -16,7 +16,7 @@ body {
 #page_header {
   min-height: 10vh;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1500px;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -41,7 +41,7 @@ body {
   margin-bottom: 48px;
   > * {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
   }
 }
 
@@ -131,10 +131,6 @@ body {
   #profile {
     justify-items: center;
     grid-template-rows: 80px 50px;
-  }
-
-  #photo {
-    align-self: center;
   }
 
   #info_section {
