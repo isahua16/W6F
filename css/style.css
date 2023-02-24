@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  color: rgb(33, 33, 33);
+  line-height: 35px;
+}
+
+#page_header {
+  min-height: 10vh;
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 24px;
+}
+#page_header > h1 {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  color: rgb(147, 147, 147);
+}
+#page_header > img {
+  justify-self: end;
+  width: 35px;
+  height: 35px;
+}
+
+#page_main {
+  display: grid;
+  justify-items: center;
+  align-items: stretch;
+  margin-bottom: 48px;
+}
+#page_main > * {
+  width: 90%;
+  max-width: 1200px;
+}
+
+#profile {
+  display: grid;
+}
+#profile > h3 {
+  font-weight: 400;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 3px;
+}
+
+#info_section {
+  display: grid;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: "Space Mono", monospace;
+  font-size: 1.4rem;
+  margin: 32px 0px;
+  letter-spacing: 3px;
+}
+
+#about {
+  display: grid;
+  align-items: center;
+}
+#about > p {
+  max-width: 600px;
+}
+
+#photo {
+  width: 70vw;
+  max-width: 350px;
+  max-height: 350px;
+  height: 70vw;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+#details {
+  display: grid;
+  align-items: center;
+}
+#details > p {
+  margin-bottom: 8px;
+}
+
+.details_bold {
+  font-weight: 700;
+}
+
+#socials {
+  margin-top: 16px;
+  display: grid;
+  width: 125px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#page_footer {
+  color: white;
+  width: 100%;
+  background-color: rgb(33, 33, 33);
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+}
+#page_footer > p {
+  width: 90%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1020px) {
+  #page_main {
+    min-height: 80vh;
+  }
+  #profile {
+    justify-items: center;
+    grid-template-rows: 80px 50px;
+  }
+  #photo {
+    align-self: center;
+  }
+  #info_section {
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 64px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
